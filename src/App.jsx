@@ -1,9 +1,11 @@
+import SideMenu from "./components/SideMenu";
+
 const App = () => {
   return (
-    <>
-      <h1>Hello World!</h1>
-    </>
-  )
+    <div id="container">
+      <SideMenu />
+    </div>
+  );
 }
 
 export default App;
