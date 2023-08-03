@@ -82,6 +82,38 @@ const SideMenu = () => {
                     <img src={UserAccountIcon} alt="" />
                     <span>Contas de usuário</span>
                 </li>
+                <li>
+                    <img src={DashboardIcon} alt="" />
+                    <span>Dashboard</span>
+                </li>
+                <li>
+                    <img src={TaskIcon} alt="" />
+                    <span>Atividades</span>
+                </li>
+                <li>
+                    <img src={BriefcaseIcon} alt="" />
+                    <span>Energia solar</span>
+                </li>
+                <li>
+                    <img src={UserAccountIcon} alt="" />
+                    <span>Contas de usuário</span>
+                </li>
+                <li>
+                    <img src={DashboardIcon} alt="" />
+                    <span>Dashboard</span>
+                </li>
+                <li>
+                    <img src={TaskIcon} alt="" />
+                    <span>Atividades</span>
+                </li>
+                <li>
+                    <img src={BriefcaseIcon} alt="" />
+                    <span>Energia solar</span>
+                </li>
+                <li>
+                    <img src={UserAccountIcon} alt="" />
+                    <span>Contas de usuário</span>
+                </li>
             </ul>
         </nav>
     );

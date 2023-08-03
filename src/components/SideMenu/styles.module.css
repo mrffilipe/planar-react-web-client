@@ -1,8 +1,7 @@
 nav {
     background-color: var(--main-color);
-    width: 250px;
+    width: 270px;
     height: 100vh;
-    padding: 0 25px;
     position: fixed;
 }
 
@@ -12,6 +11,7 @@ nav {
     align-items: center;
     padding: 25px 0;
     position: relative;
+    margin-left: 25px;
 }
 
 .logo {
@@ -50,6 +50,8 @@ nav {
     list-style: none;
     overflow-y: scroll;
     height: 100%;
+    margin-left: 25px;
+    margin-right: 3px;
 }
 
 .menu_options::-webkit-scrollbar {
@@ -73,7 +75,7 @@ nav {
     display: flex;
     align-items: center;
     padding: 10px 15px;
-    margin: 10px 0;
+    margin-right: 20px;
 }
 
 .menu_options>li:hover {
