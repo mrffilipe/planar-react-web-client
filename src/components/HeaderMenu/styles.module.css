@@ -22,6 +22,69 @@ header {
     position: relative;
 }
 
+.modal_notification {
+    /* background-color: #e5e5e5; */
+    background-color: var(--alternative-color);
+    width: 300px;
+    max-height: 400px;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    border-radius: 12px;
+    padding: 20px 30px;
+    overflow: hidden;
+    /* overflow-y: scroll; */
+}
+
+/* .modal_notification::-webkit-scrollbar {
+    width: 5px;
+}
+
+.modal_notification::-webkit-scrollbar-thumb {
+    background-color: var(--accent-color);
+    border-radius: 8px;
+}
+
+.modal_notification::-webkit-scrollbar-track {
+    background: var(--alternative-color);
+    border-radius: 8px;
+} */
+
+.modal_notification>span {
+    color: var(--secondary-color);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.list_notifications {
+    list-style: none;
+    position: relative;
+    margin: 10px 0;
+}
+
+.list_notifications>li {
+    margin-top: 25px;
+}
+
+.list_notifications>li>h2 {
+    color: var(--secondary-color);
+    font-size: 16px;
+}
+
+.list_notifications>li>p {
+    margin-top: 5px;
+    color: #e2e2e2;
+    font-size: 14px;
+}
+
+.list_notifications>li>span {
+    margin-top: 5px;
+    color: #e2e2e2;
+    font-size: 10px;
+    position: absolute;
+    right: 0;
+}
+
 .notification {
     margin-right: 15px;
     width: 25px;
