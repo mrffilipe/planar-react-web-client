@@ -1,0 +1,27 @@
+li {
+    margin: 5px 10px 0 0;
+}
+
+li>a {
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+}
+
+li>a>span {
+    margin-left: 10px;
+    color: #c5c5c5;
+    font-size: 14px;
+}
+
+.active {
+    background-color: var(--accent-color);
+}
+
+.active>span {
+    color: var(--secondary-color);
+    font-weight: 500;
+}

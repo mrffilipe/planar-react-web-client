@@ -70,7 +70,7 @@ nav {
     background: var(--alternative-color);
     border-radius: 8px;
 }
-
+/* 
 .menu_options>li {
     margin: 5px 10px 0 0;
 }
@@ -87,4 +87,4 @@ nav {
 
 .menu_options>li>a>span {
     margin-left: 10px;
-}
+} */

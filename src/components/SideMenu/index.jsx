@@ -1,6 +1,6 @@
 import styles from "./styles.module.css";
 
-import { NavLink } from "react-router-dom";
+import ListItem from "./ListItem";
 
 import LogoIcon from "../../assets/icons/logo.svg";
 import MenuAltRightIcon from "../../assets/icons/menu-alt-right.svg";
@@ -20,48 +20,26 @@ const SideMenu = () => {
                 <img src={MenuAltRightIcon} alt="Menu alt right" />
             </div>
             <ul className={styles.menu_options}>
-                <li>
-                    <NavLink to={"/"}>
-                        <img src={DashboardIcon} alt="" />
-                        <span>Dashboard</span>
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink to="/t1">
-                        <img src={TaskIcon} alt="" />
-                        <span>Atividades</span>
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink to="/t2">
-                        <img src={BriefcaseIcon} alt="" />
-                        <span>Energia solar</span>
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink to="/t3">
-                        <img src={UserAccountIcon} alt="" />
-                        <span>Contas de usuário</span>
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink to="/t1">
-                        <img src={TaskIcon} alt="" />
-                        <span>Atividades</span>
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink to="/t2">
-                        <img src={BriefcaseIcon} alt="" />
-                        <span>Energia solar</span>
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink to="/t3">
-                        <img src={UserAccountIcon} alt="" />
-                        <span>Contas de usuário</span>
-                    </NavLink>
-                </li>
+                <ListItem
+                    title="Dashboard"
+                    to="/"
+                    icon={DashboardIcon}
+                />
+                <ListItem
+                    title="Atividades"
+                    to="/activity"
+                    icon={TaskIcon}
+                />
+                <ListItem
+                    title="Energia solar"
+                    to="/solar-energy"
+                    icon={BriefcaseIcon}
+                />
+                <ListItem
+                    title="Contas de usuário"
+                    to="/user-account"
+                    icon={UserAccountIcon}
+                />
             </ul>
         </nav>
     );
