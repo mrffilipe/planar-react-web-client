@@ -1,13 +1,16 @@
 import styles from "./styles.module.css";
 
-import { FlightTakeoffOutlined } from "@mui/icons-material";
-import { MenuOutlined } from "@mui/icons-material";
-import { DashboardOutlined } from "@mui/icons-material";
-import { AssignmentOutlined } from "@mui/icons-material";
-import { SolarPowerOutlined } from "@mui/icons-material";
-import { AdminPanelSettingsOutlined } from "@mui/icons-material";
-
 import ListItem from "./ListItem";
+
+import {
+    FlightTakeoffOutlined,
+    MenuOutlined,
+    DashboardOutlined,
+    AssignmentOutlined,
+    SolarPowerOutlined,
+    AdminPanelSettingsOutlined
+} from "@mui/icons-material";
+import IconButton from "../IconButton";
 
 const SideMenu = () => {
     return (
@@ -17,8 +20,11 @@ const SideMenu = () => {
                     <FlightTakeoffOutlined className={styles.icon} />
                     <span className={styles.title}>Planar</span>
                 </div>
-                <MenuOutlined className={styles.menu_icon} />
-
+                <IconButton
+                    icon={MenuOutlined}
+                    btnStyle={styles.btn_menu}
+                    iconStyle={styles.icon_menu}
+                />
             </div>
             <ul className={styles.menu_options}>
                 <ListItem

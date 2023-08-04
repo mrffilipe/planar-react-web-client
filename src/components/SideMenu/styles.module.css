@@ -36,11 +36,13 @@ nav {
     letter-spacing: 2px;
 }
 
-.menu_header>.menu_icon {
-    color: var(--secondary-color);
-    font-size: 25px;
+.btn_menu {
     position: absolute;
     right: 5px;
+}
+
+.btn_menu .icon_menu {
+    color: var(--secondary-color);
 }
 
 .menu_header>img:hover {

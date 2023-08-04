@@ -1,7 +1,10 @@
 import styles from "./styles.module.css";
 
-import NotificationIcon from "../../assets/icons/notification.svg";
 import { useState } from "react";
+
+import IconButton from "../IconButton";
+
+import { NotificationsActiveOutlined } from "@mui/icons-material";
 
 const HeaderMenu = () => {
     const [showNotification, setShowNotification] = useState(false);
@@ -51,7 +54,7 @@ const HeaderMenu = () => {
                         <></>
                     )
                 }
-                <img className={styles.notification} src={NotificationIcon} alt="Notification" />
+                <IconButton icon={NotificationsActiveOutlined} btnStyle={styles.btn_notification} />
                 <div className={styles.user_details}>
                     <div className={styles.profile_picture}></div>
                     <div className={styles.profile}>

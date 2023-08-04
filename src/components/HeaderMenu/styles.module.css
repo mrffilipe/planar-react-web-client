@@ -19,6 +19,7 @@ header {
 
 .account_details {
     display: flex;
+    align-items: center;
     position: relative;
 }
 
@@ -85,9 +86,8 @@ header {
     right: 0;
 }
 
-.notification {
-    margin-right: 15px;
-    width: 25px;
+.btn_notification {
+    margin-right: 20px;
 }
 
 .user_details {
