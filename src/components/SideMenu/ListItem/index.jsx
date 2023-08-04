@@ -1,6 +1,7 @@
 import styles from "./styles.module.css";
 
 import { NavLink } from "react-router-dom";
+import { Icon } from "@mui/material";
 
 const ListItem = ({ title, to, icon }) => {
     return (
@@ -8,7 +9,7 @@ const ListItem = ({ title, to, icon }) => {
             <NavLink
                 to={to || "/"}
                 className={({ isActive }) => isActive ? styles.active : ""}>
-                <img src={icon} alt="" />
+                <Icon component={icon} className={styles.icon} />
                 <span>{title || ListItem.name}</span>
             </NavLink>
         </li>

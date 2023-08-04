@@ -11,17 +11,24 @@ li>a {
     transition: all 0.2s ease-in;
 }
 
+.icon {
+    color: #c5c5c5;
+    transition: all 0.2s ease-in;
+}
+
 li>a>span {
     margin-left: 10px;
     color: #c5c5c5;
     font-size: 14px;
+    transition: all 0.2s ease-in;
 }
 
 .active {
     background-color: var(--accent-color);
 }
 
-.active>span {
+.active>span,
+.active>.icon {
     color: var(--secondary-color);
     font-weight: 500;
 }

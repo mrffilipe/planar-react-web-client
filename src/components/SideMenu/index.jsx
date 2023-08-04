@@ -1,44 +1,45 @@
 import styles from "./styles.module.css";
 
-import ListItem from "./ListItem";
+import { FlightTakeoffOutlined } from "@mui/icons-material";
+import { MenuOutlined } from "@mui/icons-material";
+import { DashboardOutlined } from "@mui/icons-material";
+import { AssignmentOutlined } from "@mui/icons-material";
+import { SolarPowerOutlined } from "@mui/icons-material";
+import { AdminPanelSettingsOutlined } from "@mui/icons-material";
 
-import LogoIcon from "../../assets/icons/logo.svg";
-import MenuAltRightIcon from "../../assets/icons/menu-alt-right.svg";
-import DashboardIcon from "../../assets/icons/dashboard.svg";
-import TaskIcon from "../../assets/icons/task.svg";
-import BriefcaseIcon from "../../assets/icons/briefcase.svg";
-import UserAccountIcon from "../../assets/icons/user-account.svg";
+import ListItem from "./ListItem";
 
 const SideMenu = () => {
     return (
         <nav>
             <div className={styles.menu_header}>
                 <div className={styles.logo}>
-                    <img src={LogoIcon} alt="Logo" />
+                    <FlightTakeoffOutlined className={styles.icon} />
                     <span className={styles.title}>Planar</span>
                 </div>
-                <img src={MenuAltRightIcon} alt="Menu alt right" />
+                <MenuOutlined className={styles.menu_icon} />
+
             </div>
             <ul className={styles.menu_options}>
                 <ListItem
                     title="Dashboard"
                     to="/"
-                    icon={DashboardIcon}
+                    icon={DashboardOutlined}
                 />
                 <ListItem
                     title="Atividades"
                     to="/activity"
-                    icon={TaskIcon}
+                    icon={AssignmentOutlined}
                 />
                 <ListItem
                     title="Energia solar"
                     to="/solar-energy"
-                    icon={BriefcaseIcon}
+                    icon={SolarPowerOutlined}
                 />
                 <ListItem
                     title="Contas de usuário"
                     to="/user-account"
-                    icon={UserAccountIcon}
+                    icon={AdminPanelSettingsOutlined}
                 />
             </ul>
         </nav>
