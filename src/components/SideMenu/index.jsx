@@ -1,12 +1,13 @@
 import styles from "./styles.module.css";
 
+import { NavLink } from "react-router-dom";
+
 import LogoIcon from "../../assets/icons/logo.svg";
 import MenuAltRightIcon from "../../assets/icons/menu-alt-right.svg";
 import DashboardIcon from "../../assets/icons/dashboard.svg";
 import TaskIcon from "../../assets/icons/task.svg";
 import BriefcaseIcon from "../../assets/icons/briefcase.svg";
 import UserAccountIcon from "../../assets/icons/user-account.svg";
-import { NavLink } from "react-router-dom";
 
 const SideMenu = () => {
     return (
@@ -20,102 +21,46 @@ const SideMenu = () => {
             </div>
             <ul className={styles.menu_options}>
                 <li>
-                    <NavLink to="/">
+                    <NavLink to={"/"}>
                         <img src={DashboardIcon} alt="" />
                         <span>Dashboard</span>
                     </NavLink>
                 </li>
                 <li>
-                    <img src={TaskIcon} alt="" />
-                    <span>Atividades</span>
+                    <NavLink to="/t1">
+                        <img src={TaskIcon} alt="" />
+                        <span>Atividades</span>
+                    </NavLink>
                 </li>
                 <li>
-                    <img src={BriefcaseIcon} alt="" />
-                    <span>Energia solar</span>
+                    <NavLink to="/t2">
+                        <img src={BriefcaseIcon} alt="" />
+                        <span>Energia solar</span>
+                    </NavLink>
                 </li>
                 <li>
-                    <img src={UserAccountIcon} alt="" />
-                    <span>Contas de usuário</span>
+                    <NavLink to="/t3">
+                        <img src={UserAccountIcon} alt="" />
+                        <span>Contas de usuário</span>
+                    </NavLink>
                 </li>
                 <li>
-                    <img src={DashboardIcon} alt="" />
-                    <span>Dashboard</span>
+                    <NavLink to="/t1">
+                        <img src={TaskIcon} alt="" />
+                        <span>Atividades</span>
+                    </NavLink>
                 </li>
                 <li>
-                    <img src={TaskIcon} alt="" />
-                    <span>Atividades</span>
+                    <NavLink to="/t2">
+                        <img src={BriefcaseIcon} alt="" />
+                        <span>Energia solar</span>
+                    </NavLink>
                 </li>
                 <li>
-                    <img src={BriefcaseIcon} alt="" />
-                    <span>Energia solar</span>
-                </li>
-                <li>
-                    <img src={UserAccountIcon} alt="" />
-                    <span>Contas de usuário</span>
-                </li>
-                <li>
-                    <img src={DashboardIcon} alt="" />
-                    <span>Dashboard</span>
-                </li>
-                <li>
-                    <img src={TaskIcon} alt="" />
-                    <span>Atividades</span>
-                </li>
-                <li>
-                    <img src={BriefcaseIcon} alt="" />
-                    <span>Energia solar</span>
-                </li>
-                <li>
-                    <img src={UserAccountIcon} alt="" />
-                    <span>Contas de usuário</span>
-                </li>
-                <li>
-                    <img src={DashboardIcon} alt="" />
-                    <span>Dashboard</span>
-                </li>
-                <li>
-                    <img src={TaskIcon} alt="" />
-                    <span>Atividades</span>
-                </li>
-                <li>
-                    <img src={BriefcaseIcon} alt="" />
-                    <span>Energia solar</span>
-                </li>
-                <li>
-                    <img src={UserAccountIcon} alt="" />
-                    <span>Contas de usuário</span>
-                </li>
-                <li>
-                    <img src={DashboardIcon} alt="" />
-                    <span>Dashboard</span>
-                </li>
-                <li>
-                    <img src={TaskIcon} alt="" />
-                    <span>Atividades</span>
-                </li>
-                <li>
-                    <img src={BriefcaseIcon} alt="" />
-                    <span>Energia solar</span>
-                </li>
-                <li>
-                    <img src={UserAccountIcon} alt="" />
-                    <span>Contas de usuário</span>
-                </li>
-                <li>
-                    <img src={DashboardIcon} alt="" />
-                    <span>Dashboard</span>
-                </li>
-                <li>
-                    <img src={TaskIcon} alt="" />
-                    <span>Atividades</span>
-                </li>
-                <li>
-                    <img src={BriefcaseIcon} alt="" />
-                    <span>Energia solar</span>
-                </li>
-                <li>
-                    <img src={UserAccountIcon} alt="" />
-                    <span>Contas de usuário</span>
+                    <NavLink to="/t3">
+                        <img src={UserAccountIcon} alt="" />
+                        <span>Contas de usuário</span>
+                    </NavLink>
                 </li>
             </ul>
         </nav>

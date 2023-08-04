@@ -24,3 +24,7 @@ main {
   left: 270px;
   width: calc(100% - 270px);
 }
+
+a.active {
+  background-color: var(--accent-color);
+}
