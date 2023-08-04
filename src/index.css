@@ -13,3 +13,7 @@
   --accent-color: #F36130;
   --alternative-color: #343432;
 }
+
+#container {
+  display: flex;
+}

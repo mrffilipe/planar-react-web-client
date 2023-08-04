@@ -1,0 +1,53 @@
+header {
+    background-color: var(--main-color);
+    width: calc(100% - 270px);
+    position: fixed;
+    left: 270px;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.tab_title {
+    /* color: var(--secondary-color); */
+    color: #c24d26;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.account_details {
+    display: flex;
+    position: relative;
+}
+
+.notification {
+    margin-right: 15px;
+    width: 25px;
+}
+
+.user_details {
+    display: flex;
+}
+
+.profile_picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: var(--accent-color);
+}
+
+.profile {
+    margin-left: 15px;
+}
+
+.profile>h1 {
+    color: var(--secondary-color);
+    font-size: 16px;
+}
+
+.profile>span {
+    color: #b2b2b2;
+    font-size: 14px;
+}
