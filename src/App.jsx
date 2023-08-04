@@ -1,12 +1,20 @@
-import SideMenu from "./components/SideMenu";
-import HeaderMenu from "./components/HeaderMenu";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+import Layout from "./pages/Layout";
+import Dashboard from "./pages/Dashboard";
+
+const router = createBrowserRouter([
+  {
+    element: <Layout />,
+    children: [
+      { path: "/", element: <Dashboard /> }
+    ]
+  }
+]);
 
 const App = () => {
   return (
-    <div id="container">
-      <SideMenu />
-      <HeaderMenu />
-    </div>
+    <RouterProvider router={router} />
   );
 }
 

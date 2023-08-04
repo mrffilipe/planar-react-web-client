@@ -17,3 +17,10 @@
 #container {
   display: flex;
 }
+
+main {
+  position: relative;
+  top: 60px;
+  left: 270px;
+  width: calc(100% - 270px);
+}

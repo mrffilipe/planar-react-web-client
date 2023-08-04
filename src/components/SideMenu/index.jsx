@@ -6,6 +6,7 @@ import DashboardIcon from "../../assets/icons/dashboard.svg";
 import TaskIcon from "../../assets/icons/task.svg";
 import BriefcaseIcon from "../../assets/icons/briefcase.svg";
 import UserAccountIcon from "../../assets/icons/user-account.svg";
+import { NavLink } from "react-router-dom";
 
 const SideMenu = () => {
     return (
@@ -19,8 +20,10 @@ const SideMenu = () => {
             </div>
             <ul className={styles.menu_options}>
                 <li>
-                    <img src={DashboardIcon} alt="" />
-                    <span>Dashboard</span>
+                    <NavLink to="/">
+                        <img src={DashboardIcon} alt="" />
+                        <span>Dashboard</span>
+                    </NavLink>
                 </li>
                 <li>
                     <img src={TaskIcon} alt="" />
