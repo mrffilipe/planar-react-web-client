@@ -1,0 +1,52 @@
+.list_item {
+    width: calc(33.3% - 10px);
+    margin: 5px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 2px 4px 8px #b2b2b2;
+    transition: all 0.2s ease-in;
+}
+
+.list_item:hover {
+    background-color: #ddd;
+}
+
+.list_item a {
+    padding: 15px 30px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+}
+
+.list_item h3 {
+    font-size: 18px;
+    color: #333;
+    font-weight: 400;
+}
+
+.list_item h4 {
+    margin-top: 3px;
+    font-size: 16px;
+    color: #555;
+    font-weight: 400;
+}
+
+.list_item a>div {
+    align-self: flex-end;
+    margin-top: 5px;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.list_item div>h5 {
+    font-size: 14px;
+    color: #555;
+    font-weight: 400;
+}
+
+.list_item div>h6 {
+    font-size: 14px;
+    color: #555;
+    font-weight: 400;
+    align-self: flex-end;
+}

@@ -1,5 +1,6 @@
-import { Link } from "react-router-dom";
 import styles from "./styles.module.css";
+
+import ActivityCard from "./ActivityCard";
 
 const Activity = () => {
     return (
@@ -10,27 +11,22 @@ const Activity = () => {
                     <span />
                 </div>
                 <ul className={styles.activities_list}>
-                    <li>
-                        <Link>
-                            <h3>Nome da atividade</h3>
-                            <h4>Status</h4>
-                            <h5>Última atualização</h5>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link>
-                            <h3>Nome da atividade</h3>
-                            <h4>Status</h4>
-                            <h5>Última atualização</h5>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link>
-                            <h3>Nome da atividade</h3>
-                            <h4>Status</h4>
-                            <h5>Última atualização</h5>
-                        </Link>
-                    </li>
+                    <ActivityCard
+                        title={"Título da atividade"}
+                        status={"Status"}
+                    />
+                </ul>
+            </section>
+            <section className={styles.activity_section}>
+                <div>
+                    <h2>Finalizadas</h2>
+                    <span />
+                </div>
+                <ul className={styles.activities_list}>
+                    <ActivityCard
+                        title={"Título da atividade"}
+                        status={"Status"}
+                    />
                 </ul>
             </section>
         </div>
