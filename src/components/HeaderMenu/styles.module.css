@@ -8,6 +8,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 30px;
+    z-index: 999;
 }
 
 .tab_title {
