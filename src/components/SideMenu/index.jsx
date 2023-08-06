@@ -39,7 +39,7 @@ const SideMenu = () => {
                 />
                 <ListItem
                     title="Energia solar"
-                    to="/solar-energy"
+                    to="/solar-energy/budget-form"
                     icon={SolarPowerOutlined}
                 />
                 <ListItem

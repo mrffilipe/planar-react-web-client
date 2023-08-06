@@ -16,18 +16,32 @@ const User = () => {
                     <Button title="Alterar" icon={Edit} />
                 </div>
                 <form className={styles.form}>
-                    <label>
-                        <input type="text" required />
-                        <span>Nome</span>
-                    </label>
-                    <label>
-                        <input type="text" required />
-                        <span>Sobrenome</span>
-                    </label>
-                    <label>
-                        <input type="text" required />
-                        <span>Email</span>
-                    </label>
+                    <fieldset>
+                        <legend>Informações do usuário</legend>
+                        <label>
+                            <input type="text" required />
+                            <span>Nome</span>
+                        </label>
+                        <label>
+                            <input type="text" required />
+                            <span>Sobrenome</span>
+                        </label>
+                        <label>
+                            <input type="text" required />
+                            <span>Email</span>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Funções</legend>
+                        <label>
+                            <input type="text" required />
+                            <span>Função</span>
+                        </label>
+                        <label>
+                            <input type="text" required />
+                            <span>Permissões</span>
+                        </label>
+                    </fieldset>
                     {
                         change &&
                         <input type="submit" value="Atualizar" />
