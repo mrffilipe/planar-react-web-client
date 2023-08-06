@@ -2,7 +2,7 @@ import styles from "./styles.module.css";
 
 import IconLink from "../../components/IconLink";
 
-import { Edit, PersonAddAltRounded } from "@mui/icons-material";
+import { Visibility, PersonAddAltRounded } from "@mui/icons-material";
 
 const UserAccount = () => {
     return (
@@ -35,36 +35,36 @@ const UserAccount = () => {
                             <td>Ativo</td>
                             <td>
                                 <IconLink
-                                    icon={Edit}
-                                    to="./register"
+                                    icon={Visibility}
+                                    to="./user"
                                     iconStyle={styles.icon_style}
                                 />
                             </td>
                         </tr>
                         <tr>
                             <td>Jonatã</td>
-                            <td>Jonatã@outlook.com</td>
+                            <td>jonata@outlook.com</td>
                             <td>Desenvolvedor</td>
                             <td>Frontend</td>
                             <td>Ativo</td>
                             <td>
                                 <IconLink
-                                    icon={Edit}
-                                    to="./register"
+                                    icon={Visibility}
+                                    to="./user"
                                     iconStyle={styles.icon_style}
                                 />
                             </td>
                         </tr>
                         <tr>
                             <td>Marcos</td>
-                            <td>Marcos@outlook.com</td>
+                            <td>marcos@outlook.com</td>
                             <td>Designer</td>
                             <td>UX</td>
                             <td>Ativo</td>
                             <td>
                                 <IconLink
-                                    icon={Edit}
-                                    to="./register"
+                                    icon={Visibility}
+                                    to="./user"
                                     iconStyle={styles.icon_style}
                                 />
                             </td>

@@ -1,5 +1,5 @@
-.activity_section {
-    margin-top: 20px;
+.activity_section:nth-child(2) {
+    margin-top: 25px;
 }
 
 .activity_section>div {
