@@ -1,8 +1,8 @@
 import styles from "./styles.module.css";
 
-import IconLink from "../../components/IconLink";
-
 import { Visibility, PersonAddAltRounded } from "@mui/icons-material";
+
+import IconLink from "../../components/IconLink";
 import Button from "../../components/Button";
 
 const UserAccount = () => {
