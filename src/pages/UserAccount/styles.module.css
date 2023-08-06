@@ -90,6 +90,6 @@
     border-top: 1px solid #b2b2b2;
 }
 
-.iconStyle {
+.table .icon_style {
     color: var(--accent-color);
 }

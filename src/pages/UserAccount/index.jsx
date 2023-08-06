@@ -1,6 +1,7 @@
 import styles from "./styles.module.css";
 
-import IconButton from "../../components/IconButton";
+import IconLink from "../../components/IconLink";
+
 import { Edit, PersonAddAltRounded } from "@mui/icons-material";
 
 const UserAccount = () => {
@@ -33,10 +34,10 @@ const UserAccount = () => {
                             <td>Backend</td>
                             <td>Ativo</td>
                             <td>
-                                <IconButton
+                                <IconLink
                                     icon={Edit}
-                                    btnStyle={styles.btnStyle}
-                                    iconStyle={styles.iconStyle}
+                                    to="./register"
+                                    iconStyle={styles.icon_style}
                                 />
                             </td>
                         </tr>
@@ -47,10 +48,10 @@ const UserAccount = () => {
                             <td>Frontend</td>
                             <td>Ativo</td>
                             <td>
-                                <IconButton
+                                <IconLink
                                     icon={Edit}
-                                    btnStyle={styles.btnStyle}
-                                    iconStyle={styles.iconStyle}
+                                    to="./register"
+                                    iconStyle={styles.icon_style}
                                 />
                             </td>
                         </tr>
@@ -61,10 +62,10 @@ const UserAccount = () => {
                             <td>UX</td>
                             <td>Ativo</td>
                             <td>
-                                <IconButton
+                                <IconLink
                                     icon={Edit}
-                                    btnStyle={styles.btnStyle}
-                                    iconStyle={styles.iconStyle}
+                                    to="./register"
+                                    iconStyle={styles.icon_style}
                                 />
                             </td>
                         </tr>
