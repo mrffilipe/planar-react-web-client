@@ -3,6 +3,7 @@ import styles from "./styles.module.css";
 import IconLink from "../../components/IconLink";
 
 import { Visibility, PersonAddAltRounded } from "@mui/icons-material";
+import Button from "../../components/Button";
 
 const UserAccount = () => {
     return (
@@ -10,10 +11,7 @@ const UserAccount = () => {
             <section className={styles.user_account_session}>
                 <div>
                     <h2>Usuários</h2>
-                    <button className={styles.icon_btn}>
-                        <PersonAddAltRounded className={styles.icon} />
-                        <span>Novo</span>
-                    </button>
+                    <Button title="Novo" icon={PersonAddAltRounded} />
                 </div>
                 <table className={styles.table}>
                     <thead>
@@ -36,7 +34,7 @@ const UserAccount = () => {
                             <td>
                                 <IconLink
                                     icon={Visibility}
-                                    to="./user"
+                                    to="/user-account/user"
                                     iconStyle={styles.icon_style}
                                 />
                             </td>
@@ -50,7 +48,7 @@ const UserAccount = () => {
                             <td>
                                 <IconLink
                                     icon={Visibility}
-                                    to="./user"
+                                    to="/user-account/user"
                                     iconStyle={styles.icon_style}
                                 />
                             </td>
@@ -64,7 +62,7 @@ const UserAccount = () => {
                             <td>
                                 <IconLink
                                     icon={Visibility}
-                                    to="./user"
+                                    to="/user-account/user"
                                     iconStyle={styles.icon_style}
                                 />
                             </td>

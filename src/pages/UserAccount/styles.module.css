@@ -14,39 +14,6 @@
     font-weight: 400;
 }
 
-.icon_btn {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    background: none;
-    border: 1px solid var(--accent-color);
-    border-radius: 5px;
-    padding: 5px 10px;
-    transition: all 0.2s ease-in;
-}
-
-.icon_btn:hover {
-    background-color: var(--accent-color);
-    color: #fff;
-}
-
-.icon_btn:hover span,
-.icon_btn:hover .icon {
-    transition: all 0.2s ease-in;
-    color: var(--secondary-color);
-}
-
-.icon_btn span {
-    margin-left: 8px;
-    font-size: 16px;
-    color: var(--accent-color);
-}
-
-.icon {
-    font-size: 25px;
-    color: var(--accent-color);
-}
-
 .table {
     margin-top: 25px;
     width: 100%;
