@@ -1,8 +1,12 @@
-.form_group {}
+.form_group {
+    height: 45px;
+    margin-bottom: 10px;
+}
 
 .form_group label {
+    height: 100%;
     display: flex;
-    align-items: center;
+    justify-content: end;
     flex-direction: column;
     position: relative;
     margin-bottom: 20px;
@@ -35,14 +39,14 @@
 
 .form_group input:valid+span {
     left: 0;
-    top: -15px;
+    top: 0;
     font-size: 14px;
     color: #444;
 }
 
 .form_group input:focus+span {
     left: 0;
-    top: -15px;
+    top: 0;
     font-size: 14px;
     color: var(--accent-color);
 }

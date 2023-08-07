@@ -1,0 +1,23 @@
+.form_group {
+    margin-bottom: 10px;
+}
+
+.form_group label {
+    display: flex;
+    align-items: center;
+}
+
+.form_group span {
+    font-size: 16px;
+    color: #444;
+}
+
+.form_group select {
+    margin-left: 15px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #444;
+    font-size: 14px;
+    color: #444;
+}

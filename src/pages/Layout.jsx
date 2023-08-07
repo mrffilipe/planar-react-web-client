@@ -1,7 +1,7 @@
+import { Outlet } from "react-router-dom";
+
 import SideMenu from "../components/SideMenu";
 import HeaderMenu from "../components/HeaderMenu";
-
-import { Outlet } from "react-router-dom";
 
 function Layout() {
     return (

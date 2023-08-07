@@ -16,16 +16,14 @@ const router = createBrowserRouter([
       { path: "/activity", element: <Activity /> },
       { path: "/user-account", element: <UserAccount /> },
       { path: "/user-account/user", element: <User /> },
-      { path: "/solar-energy/budget-form", element: <SolarEnergyBudgetForm /> },
-      { path: "/sign-in", element: <SignIn /> }
+      { path: "/solar-energy/budget-form", element: <SolarEnergyBudgetForm /> }
     ]
   }
 ]);
 
 const App = () => {
   return (
-    // <RouterProvider router={router} />
-    <SignIn />
+    <RouterProvider router={router} />
   );
 }
 

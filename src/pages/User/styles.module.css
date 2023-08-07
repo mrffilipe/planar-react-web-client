@@ -2,104 +2,48 @@
     height: 100%;
 }
 
-.user_section {
-    height: 100%;
-}
-
-.user_section div {
+.user_container>div {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.user_section div>h2 {
+.user_container>div h2 {
     font-size: 22px;
     color: #444;
     font-weight: 400;
 }
 
-.form {
-    margin: 0 auto;
-    width: 700px;
-    margin-top: 10px;
+.user_section {
+    height: 100%;
     display: flex;
-    flex-wrap: wrap;
-    background-color: #f2f2f2;
-    border-radius: 5px;
-    box-shadow: 0 2px 8px #c5c5c5;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 15px;
+    background-color: #fff;
+    border-radius: 12px;
     padding: 20px;
+    box-shadow: 1px 2px 8px #c5c5c5;
 }
 
 .form fieldset {
-    border: none;
-    margin: 10px;
-    width: calc(50% - 20px);
-}
 
-.form legend {
-    margin-bottom: 5px;
-    color: #444;
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.form label {
     display: flex;
-    align-items: center;
-    position: relative;
-    margin-bottom: 20px;
-}
-
-.form label input {
-    flex: 1;
-    background: none;
+    flex-direction: column;
     border: none;
-    border-bottom: 1px solid #444;
-    padding: 20px 5px 5px 10px;
+    padding: 5px 0;
+}
+
+.form fieldset legend {
     color: #444;
-    transition: all 0.2s ease-in;
-}
-
-.form label input:focus {
-    outline: none;
-    border-bottom: 1px solid var(--accent-color);
-}
-
-.form label span {
-    position: absolute;
-    left: 10px;
-    color: #444;
-    font-size: 14px;
-    pointer-events: none;
-}
-
-.form label input:focus+span {
-    top: 0;
-    left: 0;
-    color: var(--accent-color);
-}
-
-.form label input:valid+span {
-    top: 0;
-    left: 0;
-    color: #444;
-}
-
-.form input[type="submit"] {
-    flex: 1;
-    border: 1px solid var(--accent-color);
-    border-radius: 8px;
-    padding: 10px 0;
-    background: none;
-    cursor: pointer;
-    color: var(--accent-color);
-    font-size: 16px;
-    letter-spacing: 1px;
-    transition: all 0.2s ease-in;
-}
-
-.form input[type="submit"]:hover {
-    background-color: var(--accent-color);
-    color: var(--secondary-color);
-    box-shadow: 1px 1px 4px #888;
+    font-size: 18px;
+    font-weight: 500;
 }

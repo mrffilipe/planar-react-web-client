@@ -3,8 +3,12 @@ import styles from "./styles.module.css";
 import { Cancel } from "@mui/icons-material";
 
 import Button from "../../components/Button";
-import FormLabel from "../../components/FormLabel";
-import InputSubmit from "../../components/InputSubmit";
+import {
+    NumberInput,
+    SelectInput,
+    SubmitInput,
+    TextInput
+} from "../../components/Inputs";
 
 const SolarEnergyBudgetForm = () => {
     return (
@@ -22,64 +26,30 @@ const SolarEnergyBudgetForm = () => {
                 <form className={styles.form}>
                     <fieldset>
                         <legend>Cliente</legend>
-                        <FormLabel title="Nome">
-                            <input type="text" required />
-                        </FormLabel>
-                        <FormLabel title="Sobrenome">
-                            <input type="text" required />
-                        </FormLabel>
-                        <FormLabel title="Email">
-                            <input type="text" required />
-                        </FormLabel>
+                        <TextInput label="Nome" required />
+                        <TextInput label="Sobrenome" required />
+                        <TextInput label="Email" required />
                     </fieldset>
                     <fieldset>
                         <legend>Documento</legend>
-                        <FormLabel title="Tipo">
-                            <select>
-                                <option value="1">RG</option>
-                                <option value="2" selected>CPF</option>
-                                <option value="3">CNPJ</option>
-                            </select>
-                        </FormLabel>
-                        <FormLabel title="Número">
-                            <input type="number" required />
-                        </FormLabel>
+                        <SelectInput label="Tipo" required />
+                        <NumberInput label="Número" required />
                     </fieldset>
                     <fieldset>
                         <legend>Telefone</legend>
-                        <FormLabel title="DDD">
-                            <input type="number" required />
-                        </FormLabel>
-                        <FormLabel title="Número">
-                            <input type="number" required />
-                        </FormLabel>
+                        <NumberInput label="DDD" required />
+                        <NumberInput label="Número" required />
                     </fieldset>
                     <fieldset>
                         <legend>Endereço</legend>
-                        <FormLabel title="CEP">
-                            <input type="number" required />
-                        </FormLabel>
-                        <FormLabel title="Cidade">
-                            <input type="text" required />
-                        </FormLabel>
-                        <FormLabel title="Estado">
-                            <select>
-                                <option value="1">GO</option>
-                                <option value="2" selected>MG</option>
-                                <option value="3">SP</option>
-                            </select>
-                        </FormLabel>
-                        <FormLabel title="Logradouro">
-                            <input type="text" required />
-                        </FormLabel>
-                        <FormLabel title="Rua">
-                            <input type="text" required />
-                        </FormLabel>
-                        <FormLabel title="Complemento">
-                            <input type="text" required />
-                        </FormLabel>
+                        <NumberInput label="CEP" required />
+                        <TextInput label="Cidade" required />
+                        <SelectInput label="Estado" required />
+                        <NumberInput label="Logradouro" required />
+                        <NumberInput label="Rua" required />
+                        <NumberInput label="Complemento" required />
                     </fieldset>
-                    <InputSubmit value="" />
+                    <SubmitInput value="Realizar orçamento" />
                 </form>
             </section>
         </div>
