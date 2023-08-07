@@ -2,9 +2,9 @@ import styles from "./styles.module.css";
 
 import { useState } from "react";
 
-import IconButton from "../IconButton";
-
 import { NotificationsActiveOutlined } from "@mui/icons-material";
+
+import Button from "../Button";
 
 const HeaderMenu = () => {
     const [showNotification, setShowNotification] = useState(false);
@@ -54,7 +54,7 @@ const HeaderMenu = () => {
                         <></>
                     )
                 }
-                <IconButton icon={NotificationsActiveOutlined} btnStyle={styles.btn_notification} />
+                <Button icon={NotificationsActiveOutlined} btnStyle={styles.btn_notification} />
                 <div className={styles.user_details}>
                     <div className={styles.profile_picture}></div>
                     <div className={styles.profile}>

@@ -10,7 +10,7 @@ import {
     SolarPowerOutlined,
     AdminPanelSettingsOutlined
 } from "@mui/icons-material";
-import IconButton from "../IconButton";
+import Button from "../Button";
 
 const SideMenu = () => {
     return (
@@ -20,7 +20,7 @@ const SideMenu = () => {
                     <FlightTakeoffOutlined className={styles.icon} />
                     <span className={styles.title}>Planar</span>
                 </div>
-                <IconButton
+                <Button
                     icon={MenuOutlined}
                     btnStyle={styles.btn_menu}
                     iconStyle={styles.icon_menu}
