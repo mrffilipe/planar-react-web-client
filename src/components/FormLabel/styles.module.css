@@ -1,0 +1,78 @@
+.label {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.label input[type="text"],
+.label input[type="number"] {
+    flex: 1;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #444;
+    padding: 10px;
+    color: #444;
+    padding: 15px 5px 3px 10px;
+    transition: all 0.2s ease-in;
+}
+
+.label input[type="number"]::-webkit-inner-spin-button,
+.label input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.label input[type="text"]:focus,
+.label input[type="number"]:focus {
+    outline: none;
+    border-bottom: 1px solid var(--accent-color);
+}
+
+.label span {
+    position: absolute;
+    left: 10px;
+    bottom: 5px;
+    color: #444;
+    font-size: 14px;
+    pointer-events: none;
+    transition: all 0.2s ease-in;
+}
+
+.label input[type="text"]:focus+span,
+.label input[type="number"]:focus+span {
+    top: -5px;
+    left: 0;
+    color: var(--accent-color);
+    font-size: 12px;
+}
+
+.label input[type="text"]:valid+span,
+.label input[type="number"]:valid+span {
+    top: -5px;
+    left: 0;
+    color: #444;
+    font-size: 12px;
+}
+
+.label select {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #444;
+    color: #444;
+    padding: 20px 5px 3px 10px;
+}
+
+.label select:focus {
+    outline: none;
+}
+
+.label select:valid+span {
+    color: #444;
+}
+
+.label select+span {
+    top: -5px;
+    left: 0;
+    font-size: 14px;
+}
