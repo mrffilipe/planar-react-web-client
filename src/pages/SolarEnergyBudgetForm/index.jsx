@@ -4,6 +4,7 @@ import { Cancel } from "@mui/icons-material";
 
 import Button from "../../components/Button";
 import FormLabel from "../../components/FormLabel";
+import InputSubmit from "../../components/InputSubmit";
 
 const SolarEnergyBudgetForm = () => {
     return (
@@ -44,6 +45,41 @@ const SolarEnergyBudgetForm = () => {
                             <input type="number" required />
                         </FormLabel>
                     </fieldset>
+                    <fieldset>
+                        <legend>Telefone</legend>
+                        <FormLabel title="DDD">
+                            <input type="number" required />
+                        </FormLabel>
+                        <FormLabel title="Número">
+                            <input type="number" required />
+                        </FormLabel>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Endereço</legend>
+                        <FormLabel title="CEP">
+                            <input type="number" required />
+                        </FormLabel>
+                        <FormLabel title="Cidade">
+                            <input type="text" required />
+                        </FormLabel>
+                        <FormLabel title="Estado">
+                            <select>
+                                <option value="1">GO</option>
+                                <option value="2" selected>MG</option>
+                                <option value="3">SP</option>
+                            </select>
+                        </FormLabel>
+                        <FormLabel title="Logradouro">
+                            <input type="text" required />
+                        </FormLabel>
+                        <FormLabel title="Rua">
+                            <input type="text" required />
+                        </FormLabel>
+                        <FormLabel title="Complemento">
+                            <input type="text" required />
+                        </FormLabel>
+                    </fieldset>
+                    <InputSubmit value="" />
                 </form>
             </section>
         </div>

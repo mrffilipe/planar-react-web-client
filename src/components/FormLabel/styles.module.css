@@ -1,9 +1,13 @@
-.label {
+.label>div {
     display: flex;
     align-items: center;
     position: relative;
     margin-bottom: 15px;
 }
+
+/* .label>div>* {
+    flex: 1;
+} */
 
 .label input[type="text"],
 .label input[type="number"] {
@@ -60,19 +64,14 @@
     border: none;
     border-bottom: 1px solid #444;
     color: #444;
-    padding: 20px 5px 3px 10px;
+    padding: 5px 10px;
+    margin-left: 50px;
 }
 
 .label select:focus {
     outline: none;
 }
 
-.label select:valid+span {
-    color: #444;
-}
-
 .label select+span {
-    top: -5px;
-    left: 0;
     font-size: 14px;
 }
