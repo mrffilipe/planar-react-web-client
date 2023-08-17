@@ -3,7 +3,7 @@ import styles from "./styles.module.css";
 import { Visibility, PersonAddAltRounded } from "@mui/icons-material";
 
 import IconLink from "../../components/IconLink";
-import Button from "../../components/Button";
+import TextButton from "../../components/TextButton";
 
 const UserAccount = () => {
     return (
@@ -11,7 +11,7 @@ const UserAccount = () => {
             <section className={styles.user_account_session}>
                 <div>
                     <h2>Usuários</h2>
-                    <Button title="Novo" icon={PersonAddAltRounded} />
+                    <TextButton title="Novo" icon={PersonAddAltRounded} />
                 </div>
                 <table className={styles.table}>
                     <thead>

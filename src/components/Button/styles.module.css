@@ -1,29 +1,10 @@
 .btn {
-    display: flex;
     padding: 5px 10px;
-    align-items: center;
     cursor: pointer;
     background: none;
-    border: 1px solid var(--accent-color);
+    border: none;
     border-radius: 5px;
-    color: var(--accent-color);
-    font-size: 16px;
-    transition: all 0.2s ease-in;
-}
-
-.btn:hover {
-    background-color: var(--accent-color);
-    box-shadow: 1px 1px 4px #888;
-}
-
-.btn:hover span,
-.btn:hover .icon {
-    color: var(--secondary-color);
-    transition: all 0.2s ease-in;
-}
-
-.icon {
-    margin-right: 8px;
-    color: var(--accent-color);
+    color: #e2e2e2;
     font-size: 25px;
+    transition: all 0.2s ease-in;
 }

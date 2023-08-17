@@ -2,7 +2,7 @@ import styles from "./styles.module.css";
 
 import { Cancel } from "@mui/icons-material";
 
-import Button from "../../components/Button";
+import TextButton from "../../components/TextButton";
 import {
     NumberInput,
     SelectInput,
@@ -15,7 +15,7 @@ const SolarEnergyBudgetForm = () => {
         <div className={styles.budget_form_container}>
             <div>
                 <h2>Formulário para orçamento</h2>
-                <Button
+                <TextButton
                     title="Cancelar"
                     icon={Cancel}
                     btnStyle={styles.btn_style}

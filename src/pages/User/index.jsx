@@ -3,7 +3,7 @@ import styles from "./styles.module.css";
 import { useState } from "react";
 import { Edit } from "@mui/icons-material";
 
-import Button from "../../components/Button";
+import TextButton from "../../components/TextButton";
 import { SubmitInput, TextInput } from "../../components/Inputs";
 
 const User = () => {
@@ -13,7 +13,7 @@ const User = () => {
         <div className={styles.user_container}>
             <div>
                 <h2>Usuário</h2>
-                <Button title="Alterar" icon={Edit} />
+                <TextButton title="Alterar" icon={Edit} />
             </div>
             <section className={styles.user_section}>
                 <form className={styles.form}>

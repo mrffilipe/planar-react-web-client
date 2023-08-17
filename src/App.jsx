@@ -7,6 +7,7 @@ import UserAccount from "./pages/UserAccount";
 import User from "./pages/User";
 import SolarEnergyBudgetForm from "./pages/SolarEnergyBudgetForm";
 import SignIn from "./pages/SignIn";
+import { AuthContext } from "./contexts/authContext";
 
 const router = createBrowserRouter([
   {
@@ -23,7 +24,9 @@ const router = createBrowserRouter([
 
 const App = () => {
   return (
-    <RouterProvider router={router} />
+    <AuthContext>
+      <RouterProvider router={router} />
+    </AuthContext>
   );
 }
 
