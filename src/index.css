@@ -14,10 +14,6 @@
   --alternative-color: #343432;
 }
 
-#container {
-  display: flex;
-}
-
 main {
   position: relative;
   top: 60px;
