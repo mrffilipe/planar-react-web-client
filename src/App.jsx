@@ -1,5 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
+import AuthContextProvider from "./contexts/AuthContext";
+
 import Layout from "./pages/Layout";
 import Dashboard from "./pages/Dashboard";
 import Activity from "./pages/Activity";
@@ -7,7 +9,6 @@ import UserAccount from "./pages/UserAccount";
 import User from "./pages/User";
 import SolarEnergyBudgetForm from "./pages/SolarEnergyBudgetForm";
 import SignIn from "./pages/SignIn";
-import { AuthContext } from "./contexts/authContext";
 
 const router = createBrowserRouter([
   {
@@ -24,9 +25,9 @@ const router = createBrowserRouter([
 
 const App = () => {
   return (
-    <AuthContext>
+    <AuthContextProvider>
       <RouterProvider router={router} />
-    </AuthContext>
+    </AuthContextProvider>
   );
 }
 
