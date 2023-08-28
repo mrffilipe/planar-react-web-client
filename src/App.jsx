@@ -9,19 +9,15 @@ const App = () => {
   const { authenticated } = useAuthContext();
 
   return (
-    <div id="container">
-      {
-        authenticated ?
-          <>
-            <HeaderMenu />
-            <SideMenu />
-            <main>
-              <Outlet />
-            </main>
-          </> :
-          <Navigate replace to="/sign-in" />
-      }
-    </div>
+    authenticated ?
+      <>
+        <HeaderMenu />
+        <SideMenu />
+        <main>
+          <Outlet />
+        </main>
+      </> :
+      <Navigate replace to="/sign-in" />
   );
 };
 
