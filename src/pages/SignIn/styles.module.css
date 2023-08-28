@@ -1,16 +1,15 @@
 .sign_in_container {
-    height: 100vh;
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f2f2f2;
 }
 
 .sign_in_section {
+    background-color: #fff;
     width: 1000px;
     height: 500px;
     display: flex;
-    background-color: #fff;
     border-radius: 12px;
     box-shadow: 2px 4px 8px #c5c5c5;
     overflow: hidden;
