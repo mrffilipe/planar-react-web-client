@@ -7,6 +7,7 @@ import UserAccount from "./pages/UserAccount";
 import User from "./pages/User";
 import SolarEnergyBudgetForm from "./pages/SolarEnergyBudgetForm";
 import SignIn from "./pages/SignIn";
+import Chat from "./pages/Chat";
 
 const Router = createBrowserRouter([
     {
@@ -16,7 +17,8 @@ const Router = createBrowserRouter([
             { path: "/activity", element: <Activity /> },
             { path: "/user-account", element: <UserAccount /> },
             { path: "/user-account/user", element: <User /> },
-            { path: "/solar-energy/budget-form", element: <SolarEnergyBudgetForm /> }
+            { path: "/solar-energy/budget-form", element: <SolarEnergyBudgetForm /> },
+            { path: "/chat", element: <Chat /> }
         ]
     },
     { path: "/sign-in", element: <SignIn /> }

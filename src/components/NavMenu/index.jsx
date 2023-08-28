@@ -10,7 +10,8 @@ import {
     DashboardOutlined,
     AssignmentOutlined,
     SolarPowerOutlined,
-    AdminPanelSettingsOutlined
+    AdminPanelSettingsOutlined,
+    ChatOutlined
 } from "@mui/icons-material";
 import Button from "../Button";
 
@@ -36,6 +37,11 @@ const NavMenu = () => {
                     title="Dashboard"
                     to="/"
                     icon={DashboardOutlined}
+                />
+                <ListItem
+                    title="Chat"
+                    to="/chat"
+                    icon={ChatOutlined}
                 />
                 <ListItem
                     title="Atividades"
