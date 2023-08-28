@@ -2,8 +2,12 @@ import { createContext, useReducer } from 'react';
 
 export const AuthContext = createContext({});
 
-export const authReducer = (state, action) => {
+const authReducer = (state, action) => {
     switch (action.type) {
+        case 'SET_AUTH':
+            return action.authData;
+        case "LOGOUT":
+            return null;
         default:
             return state;
     }
@@ -12,13 +16,13 @@ export const authReducer = (state, action) => {
 const AuthContextProvider = ({ children }) => {
     const [state, dispatch] = useReducer(authReducer, JSON.parse(localStorage.getItem("authData") || null));
 
-    const setAuth = (newAuthData) => {
-        dispatch({ type: newAuthData });
-        localStorage.setItem("authData", JSON.stringify(newAuthData));
+    const setAuth = (authData) => {
+        dispatch({ type: "SET_AUTH", authData });
+        localStorage.setItem("authData", JSON.stringify(authData));
     };
 
     const logout = () => {
-        dispatch({ type: null });
+        dispatch({ type: "LOGOUT", authData: null });
         localStorage.removeItem("authData");
     };
 

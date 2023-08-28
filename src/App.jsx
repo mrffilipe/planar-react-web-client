@@ -7,22 +7,17 @@ import HeaderMenu from "./components/HeaderMenu";
 
 const App = () => {
   const { authenticated } = useAuthContext();
-
+  
   return (
-    <div id="container">
-      {
-        authenticated ?
-          <>
-            <HeaderMenu />
-            <SideMenu />
-            <main>
-              <Outlet />
-            </main>
-          </> :
-          <Navigate replace to="/sign-in" />
-      }
-
-    </div>
+    authenticated ?
+      <div id="container">
+        <HeaderMenu />
+        <SideMenu />
+        <main>
+          <Outlet />
+        </main>
+      </div> :
+      <Navigate replace to="/sign-in" />
   );
 };
 

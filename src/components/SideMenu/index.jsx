@@ -1,5 +1,7 @@
 import styles from "./styles.module.css";
 
+import useAuthContext from "../../hooks/useAuthContext";
+
 import ListItem from "./ListItem";
 
 import {
@@ -13,6 +15,8 @@ import {
 import Button from "../Button";
 
 const SideMenu = () => {
+    const { logout } = useAuthContext();
+
     return (
         <nav>
             <div className={styles.menu_header}>
@@ -25,6 +29,7 @@ const SideMenu = () => {
                     btnStyle={styles.btn_menu}
                     iconStyle={styles.icon_menu}
                 />
+                <button onClick={logout}>Clique aqui</button>
             </div>
             <ul className={styles.menu_options}>
                 <ListItem
