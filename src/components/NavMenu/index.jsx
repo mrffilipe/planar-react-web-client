@@ -14,7 +14,7 @@ import {
 } from "@mui/icons-material";
 import Button from "../Button";
 
-const SideMenu = () => {
+const NavMenu = () => {
     const { logout } = useAuthContext();
 
     return (
@@ -57,4 +57,4 @@ const SideMenu = () => {
     );
 }
 
-export default SideMenu;
+export default NavMenu;

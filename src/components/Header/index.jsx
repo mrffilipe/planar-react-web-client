@@ -6,7 +6,7 @@ import { NotificationsActiveOutlined } from "@mui/icons-material";
 
 import Button from "../Button";
 
-const HeaderMenu = () => {
+const Header = () => {
     const [showNotification, setShowNotification] = useState(false);
 
     return (
@@ -67,4 +67,4 @@ const HeaderMenu = () => {
     );
 }
 
-export default HeaderMenu;
+export default Header;

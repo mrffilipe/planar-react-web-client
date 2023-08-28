@@ -2,8 +2,8 @@ import { Navigate, Outlet } from "react-router-dom";
 
 import useAuthContext from "./hooks/useAuthContext";
 
-import SideMenu from "./components/SideMenu";
-import HeaderMenu from "./components/HeaderMenu";
+import NavMenu from "./components/NavMenu";
+import Header from "./components/Header";
 
 const App = () => {
   const { authenticated } = useAuthContext();
@@ -11,11 +11,13 @@ const App = () => {
   return (
     authenticated ?
       <>
-        <HeaderMenu />
-        <SideMenu />
-        <main>
-          <Outlet />
-        </main>
+        <NavMenu />
+        <div id="content-container">
+          <Header />
+          <main>
+            <Outlet />
+          </main>
+        </div>
       </> :
       <Navigate replace to="/sign-in" />
   );

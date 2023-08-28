@@ -1,14 +1,9 @@
 header {
     background-color: var(--main-color);
-    width: calc(100% - 270px);
-    position: fixed;
-    left: 270px;
-    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 30px;
-    z-index: 999;
 }
 
 .tab_title {
