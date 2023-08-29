@@ -1,6 +1,7 @@
 import styles from "./styles.module.css";
 
-import { PersonOutline, DoneAllOutlined } from "@mui/icons-material";
+import { PersonOutline } from "@mui/icons-material";
+import ChatListItem from "./ChatListItem";
 
 const Chat = () => {
     return (
@@ -8,24 +9,9 @@ const Chat = () => {
             <section className={styles.chat_section}>
                 <div className={styles.side_panel}>
                     <ul>
-                        <li>
-                            <div className={styles.profile}>
-                                <PersonOutline className={styles.icon} />
-                            </div>
-                            <div className={styles.conversation_summary}>
-                                <div>
-                                    <h3>Usuário</h3>
-                                    <h5>16:55</h5>
-                                </div>
-                                <div className={styles.message_details}>
-                                    <DoneAllOutlined />
-                                    <span>Este é o resumo da mensagem...</span>
-                                    <div className={styles.unread}>
-                                        <span>!</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
+                        <ChatListItem />
+                        <ChatListItem />
+                        <ChatListItem />
                     </ul>
                 </div>
                 <div style={styles.main}>
@@ -38,7 +24,7 @@ const Chat = () => {
                 </div>
             </section>
         </div>
-    )
+    );
 }
 
 export default Chat;
