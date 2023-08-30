@@ -1,6 +1,4 @@
-.chat_container {
-    /* background-color: #fff; */
-}
+.chat_container {}
 
 .chat_section {
     display: flex;
@@ -8,5 +6,52 @@
 
 .side_panel ul {
     width: 400px;
+    list-style: none;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    background-color: #202C33;
+    padding: 10px 15px;
+}
+
+.profile {
+    background-color: #888;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.profile svg {
+    font-size: 34px;
+    color: #fff;
+}
+
+.user h3 {
+    margin-left: 15px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.talk {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+.talk ul {
     list-style: none;
 }
