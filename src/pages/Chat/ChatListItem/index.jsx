@@ -2,9 +2,9 @@ import styles from "./styles.module.css";
 
 import { PersonOutline, DoneAllOutlined } from "@mui/icons-material";
 
-const ChatListItem = () => {
+const ChatListItem = ({ selected }) => {
     return (
-        <li className={styles.chat_li}>
+        <li className={`${styles.chat_li} ${selected ? styles.selected : ""}`}>
             <div className={styles.profile}>
                 <PersonOutline className={styles.icon} />
             </div>

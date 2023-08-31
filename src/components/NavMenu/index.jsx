@@ -30,7 +30,7 @@ const NavMenu = () => {
                     btnStyle={styles.btn_menu}
                     iconStyle={styles.icon_menu}
                 />
-                <button onClick={logout}>Clique aqui</button>
+                {/* <button onClick={logout}>Clique aqui</button> */}
             </div>
             <ul className={styles.menu_options}>
                 <ListItem

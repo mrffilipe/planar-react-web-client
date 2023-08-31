@@ -1,12 +1,18 @@
-.chat_container {}
+.chat_container {
+    height: 100%;
+}
 
 .chat_section {
+    height: 100%;
     display: flex;
 }
 
 .side_panel ul {
+    height: 100%;
+    background-color: #111B21;
     width: 400px;
     list-style: none;
+    border-right: 1px solid #8696A0;
 }
 
 .main {
@@ -20,6 +26,7 @@
     align-items: center;
     background-color: #202C33;
     padding: 10px 15px;
+    border-bottom: 1px solid #0C1317;
 }
 
 .profile {
@@ -45,13 +52,72 @@
 }
 
 .talk {
+    background-color: #0B141A;
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 0 40px;
+    overflow-y: auto;
+}
+
+.talk::-webkit-scrollbar {
+    width: 8px;
+}
+
+.talk::-webkit-scrollbar-thumb {
+    background-color: #2A3942;
 }
 
 .talk ul {
+    flex: 1;
     list-style: none;
+}
+
+.talk ul li {
+    margin: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.talk ul li div {
+    max-width: 70%;
+    background-color: #793018;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.talk ul li div span {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.talk ul li div {
+    display: flex;
+    align-items: center;
+}
+
+.talk ul li div h4 {
+    color: #8696A0;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.talk ul li div svg {
+    margin-left: 10px;
+    color: #8696A0;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.talk .contact {
+    justify-content: flex-start;
+}
+
+.talk .contact div {
+    background-color: #202C33;
 }

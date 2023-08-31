@@ -1,22 +1,30 @@
 .chat_li {
     width: 100%;
-    background-color: #e5e5e5;
+    background: none;
     display: flex;
     align-items: center;
-    position: relative;
-    border-radius: 8px;
     padding: 15px;
     cursor: pointer;
+    margin: 0;
+    border-bottom: 1px solid #8696A0;
+}
+
+.selected {
+    background-color: #2A3942;
 }
 
 .profile {
     background-color: #ccc;
+    width: 46px;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
-    padding: 2px;
 }
 
 .profile svg {
-    font-size: 40px;
+    font-size: 36px;
     color: #fff;
 }
 
@@ -32,11 +40,13 @@
 }
 
 .conversation_summary>div h3 {
-    font-size: 18px;
+    color: #fff;
+    font-size: 16px;
     font-weight: 400;
 }
 
 .conversation_summary>div h5 {
+    color: #8696A0;
     font-size: 14px;
     font-weight: 400;
 }
@@ -48,15 +58,21 @@
 }
 
 .message_details svg {
+    color: #8696A0;
     margin-right: 5px;
     font-size: 18px;
 }
 
 .message_details>span {
+    color: #8696A0;
     display: flex;
     align-items: center;
     font-size: 14px;
     font-weight: 400;
+}
+
+.selected .message_details>span {
+    color: #fff;
 }
 
 .unread {
