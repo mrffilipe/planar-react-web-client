@@ -2,9 +2,9 @@ import styles from "./styles.module.css";
 
 import { Link } from "react-router-dom";
 
-const ActivityCard = ({ to, title, status, updatedOn }) => {
+const ActivityCard = ({ to, id, title, status, updatedOn }) => {
     return (
-        <li className={styles.list_item}>
+        <li id={id} className={styles.list_item}>
             <Link to={to || "/"}>
                 <h3>{title || ActivityCard.name}</h3>
                 <h4>{status || "Not defined"}</h4>
