@@ -11,7 +11,7 @@ const Activity = () => {
 
     useEffect(() => {
         try {
-            async () => {
+            const startFetching = async () => {
                 const response = await axios.get("https://localhost:7280/api/activity/find-activities");
 
                 if (response.status !== 200) {
@@ -44,6 +44,7 @@ const Activity = () => {
                 setActivitiesFinished(fineshed);
             };
 
+            startFetching();
         } catch (error) {
             console.log(error);
         }

@@ -1,11 +1,47 @@
 import styles from "./styles.module.css";
 
+import { useEffect, useState } from "react";
+import axios from "axios";
+
 import { Visibility, PersonAddAltRounded } from "@mui/icons-material";
 
 import IconLink from "../../components/IconLink";
 import TextButton from "../../components/TextButton";
 
 const UserAccount = () => {
+    const [users, setUsers] = useState([]);
+
+    useEffect(() => {
+        const startFetching = async () => {
+            const response = await axios.get("https://localhost:7104/api/useraccount/find-all-users");
+
+            if (response.status !== 200) {
+                throw new Error();
+            }
+
+            const mapUsers = response.data.map(e =>
+                <tr id={e.id}>
+                    <td>{`${e.firstName} ${e.lastName}`}</td>
+                    <td>{e.email}</td>
+                    <td>Desenvolvedor</td>
+                    <td>Backend</td>
+                    <td>Ativo</td>
+                    <td>
+                        <IconLink
+                            icon={Visibility}
+                            to={`/user-account/user/${e.id}`}
+                            iconStyle={styles.icon_style}
+                        />
+                    </td>
+                </tr>
+            );
+
+            setUsers(mapUsers);
+        };
+
+        startFetching();
+    }, []);
+
     return (
         <div className={styles.user_account_container}>
             <section className={styles.user_account_session}>
@@ -25,48 +61,7 @@ const UserAccount = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>Filipe</td>
-                            <td>mrffilipe@outlook.com</td>
-                            <td>Desenvolvedor</td>
-                            <td>Backend</td>
-                            <td>Ativo</td>
-                            <td>
-                                <IconLink
-                                    icon={Visibility}
-                                    to="/user-account/user"
-                                    iconStyle={styles.icon_style}
-                                />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Jonatã</td>
-                            <td>jonata@outlook.com</td>
-                            <td>Desenvolvedor</td>
-                            <td>Frontend</td>
-                            <td>Ativo</td>
-                            <td>
-                                <IconLink
-                                    icon={Visibility}
-                                    to="/user-account/user"
-                                    iconStyle={styles.icon_style}
-                                />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Marcos</td>
-                            <td>marcos@outlook.com</td>
-                            <td>Designer</td>
-                            <td>UX</td>
-                            <td>Ativo</td>
-                            <td>
-                                <IconLink
-                                    icon={Visibility}
-                                    to="/user-account/user"
-                                    iconStyle={styles.icon_style}
-                                />
-                            </td>
-                        </tr>
+                        {users}
                     </tbody>
                 </table>
             </section>

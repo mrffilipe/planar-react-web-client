@@ -16,7 +16,7 @@ const Router = createBrowserRouter([
             { path: "/", element: <Dashboard /> },
             { path: "/activity", element: <Activity /> },
             { path: "/user-account", element: <UserAccount /> },
-            { path: "/user-account/user", element: <User /> },
+            { path: "/user-account/user/:userId", element: <User /> },
             { path: "/solar-energy/budget-form", element: <SolarEnergyBudgetForm /> },
             { path: "/chat", element: <Chat /> }
         ]
