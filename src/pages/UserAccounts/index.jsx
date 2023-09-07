@@ -5,7 +5,7 @@ import axios from "axios";
 
 import { Visibility, PersonAddAltRounded } from "@mui/icons-material";
 
-import IconLink from "../../components/IconLink";
+import LinkButton from "../../components/LinkButton";
 import TextButton from "../../components/TextButton";
 
 const UserAccount = () => {
@@ -27,7 +27,7 @@ const UserAccount = () => {
                     <td>Backend</td>
                     <td>Ativo</td>
                     <td>
-                        <IconLink
+                        <LinkButton
                             icon={Visibility}
                             to={`/user-account/user/${e.id}`}
                             iconStyle={styles.icon_style}
@@ -47,23 +47,32 @@ const UserAccount = () => {
             <section className={styles.user_account_session}>
                 <div>
                     <h2>Usuários</h2>
-                    <TextButton title="Novo" icon={PersonAddAltRounded} />
+                    {/* <TextButton title="Novo" icon={PersonAddAltRounded} /> */}
+                    <LinkButton
+                        title="Novo"
+                        icon={PersonAddAltRounded}
+                        to="/user-account/new-user"
+                    />
                 </div>
-                <table className={styles.table}>
-                    <thead>
-                        <tr>
-                            <th>Nome</th>
-                            <th>Email</th>
-                            <th>Função</th>
-                            <th>Tipo</th>
-                            <th>Status</th>
-                            <th />
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {users}
-                    </tbody>
-                </table>
+                {
+                    users.length ?
+                        <table className={styles.table}>
+                            <thead>
+                                <tr>
+                                    <th>Nome</th>
+                                    <th>Email</th>
+                                    <th>Função</th>
+                                    <th>Tipo</th>
+                                    <th>Status</th>
+                                    <th />
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {users}
+                            </tbody>
+                        </table> :
+                        <h3>Nenhum usuário registrado</h3>
+                }
             </section>
         </div>
     );

@@ -1,0 +1,40 @@
+.link {
+    display: flex;
+    padding: 5px 10px;
+    align-items: center;
+    cursor: pointer;
+    background: none;
+    border: 1px solid var(--accent-color);
+    border-radius: 5px;
+    color: var(--accent-color);
+    font-size: 16px;
+    transition: all 0.2s ease-in;
+    text-decoration: none;
+}
+
+.link:hover {
+    background-color: var(--accent-color);
+    box-shadow: 1px 1px 4px #888;
+}
+
+.link:hover span,
+.link:hover .icon {
+    color: var(--secondary-color);
+    transition: all 0.2s ease-in;
+}
+
+.icon {
+    margin-right: 8px;
+    color: var(--accent-color);
+    font-size: 25px;
+}
+/* .link {
+    padding: 5px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.icon {
+    color: #b2b2b2;
+    font-size: 25px;
+} */

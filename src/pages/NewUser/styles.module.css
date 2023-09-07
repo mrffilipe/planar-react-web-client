@@ -1,0 +1,11 @@
+.new_user_section div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.new_user_section div>h2 {
+    font-size: 22px;
+    color: #444;
+    font-weight: 400;
+}
