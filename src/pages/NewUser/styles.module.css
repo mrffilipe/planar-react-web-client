@@ -1,11 +1,24 @@
-.new_user_section div {
+.new_user_section {
+    height: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
-.new_user_section div>h2 {
-    font-size: 22px;
-    color: #444;
-    font-weight: 400;
+.form_container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    width: 400px;
+}
+
+.full_name {
+    display: flex;
+}
+
+.full_name> :nth-child(2) {
+    margin-left: 10px;
 }

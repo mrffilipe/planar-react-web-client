@@ -3,10 +3,11 @@ import styles from "./styles.module.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-import { Visibility, PersonAddAltRounded } from "@mui/icons-material";
 
+import { Visibility, PersonAddAltRounded } from "@mui/icons-material";
 import LinkButton from "../../components/LinkButton";
-import TextButton from "../../components/TextButton";
+import SimpleLinkButton from "../../components/SimpleLinkButton";
+import TopPage from "../../components/TopPage";
 
 const UserAccount = () => {
     const [users, setUsers] = useState([]);
@@ -27,10 +28,9 @@ const UserAccount = () => {
                     <td>Backend</td>
                     <td>Ativo</td>
                     <td>
-                        <LinkButton
+                        <SimpleLinkButton
                             icon={Visibility}
                             to={`/user-account/user/${e.id}`}
-                            iconStyle={styles.icon_style}
                         />
                     </td>
                 </tr>
@@ -45,15 +45,13 @@ const UserAccount = () => {
     return (
         <div className={styles.user_account_container}>
             <section className={styles.user_account_session}>
-                <div>
-                    <h2>Usuários</h2>
-                    {/* <TextButton title="Novo" icon={PersonAddAltRounded} /> */}
+                <TopPage title="Usuários">
                     <LinkButton
                         title="Novo"
                         icon={PersonAddAltRounded}
                         to="/user-account/new-user"
                     />
-                </div>
+                </TopPage>
                 {
                     users.length ?
                         <table className={styles.table}>

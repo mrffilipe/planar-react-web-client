@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+
+.info h2 {
+    margin-left: 10px;
+    font-size: 1.4em;
+    font-weight: 400;
+    color: #444;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+}

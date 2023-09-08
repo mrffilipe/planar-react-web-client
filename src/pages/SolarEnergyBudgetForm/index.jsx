@@ -1,7 +1,8 @@
 import styles from "./styles.module.css";
 
-import { Cancel } from "@mui/icons-material";
+import { useState } from "react";
 
+import { Cancel } from "@mui/icons-material";
 import TextButton from "../../components/TextButton";
 import {
     NumberInput,
@@ -11,6 +12,8 @@ import {
 } from "../../components/Inputs";
 
 const SolarEnergyBudgetForm = () => {
+    const [step, setStep] = useState(1);
+
     return (
         <div className={styles.budget_form_container}>
             <div>
