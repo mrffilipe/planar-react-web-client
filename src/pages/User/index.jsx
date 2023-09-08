@@ -5,9 +5,9 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 
 import { Edit } from "@mui/icons-material";
-
 import TextButton from "../../components/TextButton";
 import { SubmitInput, TextInput } from "../../components/Inputs";
+import TopPage from "../../components/TopPage";
 
 const User = () => {
     const [change, setChange] = useState(true);
@@ -30,12 +30,9 @@ const User = () => {
     }, []);
 
     return (
-        <div className={styles.user_container}>
-            <div>
-                <h2>Usuário</h2>
-                <TextButton title="Alterar" icon={Edit} />
-            </div>
-            <section className={styles.user_section}>
+        <section className={styles.user_section}>
+            <TopPage title="Usuário" goBack="/user-account" />
+            <div className={styles.form_container}>
                 <form className={styles.form}>
                     <fieldset>
                         <legend>Informações do usuário</legend>
@@ -48,8 +45,8 @@ const User = () => {
                         <SubmitInput value="Atualizar" />
                     }
                 </form>
-            </section>
-        </div >
+            </div>
+        </section>
     );
 }
 

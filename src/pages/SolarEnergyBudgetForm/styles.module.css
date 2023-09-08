@@ -1,28 +1,11 @@
-.budget_form_container>div {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.budget_form_container>div h2 {
-    font-size: 22px;
-    color: #444;
-    font-weight: 400;
-}
-
-.budget_form_container>div .btn_style {
-    border: 1px solid red;
-}
-
-.budget_form_container>div .btn_style:hover {
-    background-color: red;
-}
-
-.budget_form_container>div .icon_style {
-    color: red;
-}
-
 .budget_form_section {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form_container {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,4 +31,15 @@
     color: #444;
     font-size: 18px;
     font-weight: 500;
+}
+
+.form_control {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.form_control> :nth-child(2) {
+    margin-left: 10px;
 }
